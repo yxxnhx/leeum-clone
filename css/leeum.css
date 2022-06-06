@@ -1,0 +1,351 @@
+.inner {
+    max-width: 1300px;
+    padding-left: 300px;
+    min-width: auto;
+    padding-top: 20px;
+}
+
+header .inner {
+    /* width: 1440px; */
+    margin: auto;
+    display: flex;
+    padding-top: 60px;
+}
+
+.gnb {
+    padding-bottom: 50px;
+    width: 255px;
+    padding-right: 20px;
+    position: fixed;
+    top: 60px;
+    left: 70px;
+    right: 0;
+}
+
+.menu {
+    display: none;
+}
+
+.dep1 {
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.dep1>li>a {
+    pointer-events: none;
+
+}
+
+.dep1.leeum {
+    padding-bottom: 45px;
+}
+
+.dep1.last{
+    padding-top: 45px;
+}
+
+.dep2 {
+    padding: 5px 0;
+    display: none;
+}
+
+.dep2.on {
+    display: block;
+}
+
+.dep2 li {
+    font-size: 11px;
+    padding: 5px 0;
+    /* display: none; */
+
+}
+
+.header-right {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 210px;
+}
+
+.utill-area {
+    margin-left: auto;
+}
+.utill {
+    display: flex;
+}
+
+.utill li {
+    padding-left: 20px;
+}
+
+.main-banner {
+    background: url(../leeum-img/main/main_banner.jpeg);
+    background-size: cover;
+    width: 100%;
+    padding-top: 48.46%;
+    /* height: 32.813vw; */
+    margin-top: 50px;
+}
+
+.title-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px 0 20px;
+
+}
+
+.title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.artist-area .inner{
+    display: flex;
+    flex-direction: column;
+}
+
+.artist-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.artist-box {
+    margin-right: 20px;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.artist-box.third {
+    margin-right: 0;
+}
+
+.artist-box {
+    width: calc(33.333333% - 13.34px);
+    margin-right: 17px;
+}
+
+.artist-box .artist-txt {
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+.artist-thumb img {
+    width: 100%;
+    height: auto;
+}
+
+.artist-btn {
+    width: 150px;
+    height: 46px;
+    border: 1px solid #111;
+    font-size: 12px;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+.thumb-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.thumb {
+    width: calc(33.333333% - 10px);
+    margin-right: 10px;
+    position: relative;
+}
+
+.thumb .thumb-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.thumb .thumb-cover:hover {
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+
+.thumb img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    margin-top: 200px;
+    padding-bottom: 30px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.footer-top {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.footer-utill, .footer-legal {
+    display: flex;
+    margin-right: 50px;
+}
+
+.footer-utill li {
+    margin-right: 10px;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #111;
+}
+
+.footer-legal li {
+    margin-right: 10px;
+    padding-bottom: 3px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1.2rem;
+}
+
+.footer-info .licence {
+    text-decoration: underline;
+}
+
+.footer-sns {
+    display: flex;
+}
+
+.footer-info span {
+    margin-right: 7px;
+
+}
+
+.footer-info li, .footer-sns li {
+    margin-left: 5px;
+
+}
+
+@media screen and (max-width: 958px){
+    .gnb {
+        display: none;
+    }
+    .inner {
+        width: 100%;
+        padding-left: 0;
+    }
+    .menu {
+        display: block;
+    }
+
+    header .inner {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 80px;
+        height: 80px;
+        margin: auto;
+    }
+
+    .utill-area {
+        margin: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 767px) {
+    .main-banner {
+        background: url(../leeum-img/main/main-banner2.jpg);
+        background-size: cover;
+        width: 100%;
+        padding-top: 265.97%;
+        /* height: auto; */
+    }
+
+    .header-right {
+        height: 10px;
+    }
+    
+    .artist-box, .thumb {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 70px;
+    }
+
+    .arrow {
+        display: none;
+    }
+    
+    .artist-btn {
+        display: none;
+    }
+
+    .thumb {
+        display: none;
+    }
+
+    .thumb.first {
+        display: block;
+        position: relative;
+    }
+
+    .thumb.first::after {
+        content: "";
+        display: block;
+        background: url(../leeum-img/icon_next.svg);
+        width: 14px;
+        height: 24px;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+    }
+
+    footer .inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-top p {
+        display: none;
+    }
+
+    .footer-top, .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 1.2rem;
+    }
+
+    .footer-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    .main-banner {
+        width: 18.750vw;
+        padding-top: 566.66%;
+    }
+}
