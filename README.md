@@ -4,6 +4,13 @@
 
 <br />
 
+## 📎 사이트
+
+- 기존 사이트 : http://leeumstore.org/
+- 배포 사이트 : https://yxxnhx.github.io/leeum-clone/
+
+<br />
+
 ## 📅 기간
 
 22.05.26 ~ 22.06.02
